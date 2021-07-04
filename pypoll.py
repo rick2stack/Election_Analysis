@@ -57,10 +57,18 @@ with open(file_to_load) as election_data:
             winning_percentage = vote_percentage
             # And, set the winning_candidate equal to the candidate's name.
             winning_candidate = candidate_name
-    print(f"The winning candidate is {winning_candidate} with {winning_percentage:.1f}%, and a total of {votes:,} votes)\n")
-
-
-
+    election_results=(f"\nThe winning candidate is {winning_candidate} with {winning_percentage:.1f}%, and a total of {votes:,} votes\n")
+with open(file_to_save,"w") as election2021:
+    
+    for candidate_name in candidate_votes:
+        # 2. Retrieve vote count of a candidate. the [x] is the key
+        votes = candidate_votes[candidate_name]
+        # 3. Calculate the percentage of votes.
+        vote_percentage = float(votes) / float(total_votes) * 100
+        # 4. Print the candidate name and percentage of votes.
+        election2021.write(f"\n{candidate_name} received {vote_percentage}% of the vote.")
+    election2021.write(election_results)
+    
 
 #Write down the names of all the candidates.
 #Add a vote count for each candidate.
