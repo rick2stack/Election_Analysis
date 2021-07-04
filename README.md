@@ -23,5 +23,5 @@ Based on the election data and our analysis we were able to determine the follow
 -------------------------
 ## Election-Audit Summary
 The election audit audit script used to analysis the election data can be used to audit any election other results.  In order to re-use the script on another election, **two (2) minor** changes will have to be made to the script. 
-1. The first minor change is to update the file path locations and the file names of both the file with the data and the file with the output. (![Lines_to_update_for_NewElection1.PNG](https://github.com/rick2stack/Election_Analysis/blob/main/Resources/Lines_to_update_for_NewElection1.PNG). 
-2. The second minor change is to update the column index, this will only have to be updated if the election csv file's column data headers are in a different order.(![Lines_to_update_for_NewElection2.PNG](https://github.com/rick2stack/Election_Analysis/blob/main/Resources/Lines_to_update_for_NewElection2.PNG)
+1. The first minor change is to update the file path locations and the file names of both the file with the data and the file with the output. ![Lines_to_update_for_NewElection1.PNG](https://github.com/rick2stack/Election_Analysis/blob/main/Resources/Lines_to_update_for_NewElection1.PNG). 
+2. The second minor change is to update the column index, this will only have to be updated if the election csv file's column data headers are in a different order.![Lines_to_update_for_NewElection2.PNG](https://github.com/rick2stack/Election_Analysis/blob/main/Resources/Lines_to_update_for_NewElection2.PNG)
